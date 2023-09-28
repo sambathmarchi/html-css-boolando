@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+header{
+    background-color: #ff6900;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    box-shadow: 0 1px 3px #666;
+
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav{
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.logo{
+    height: 35px;
+}
+
+.firstmenu li{
+    padding-right: 8px;
+}
+
+.thirdmenu li{
+    padding-left: 8px;
+
+
+}
+
+main{
+    margin-top: 100px;
+}
+
+main>.container{
+    flex-wrap: wrap;
+    
+}
+
+.article{
+    width: calc(100%/3);
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.articlesquare{
+    position: relative;
+}
+
+.articlesquare > img{
+    width: 100%;
+}
+
+.articlesquare .firstimage{
+    display: inline-block;
+}
+
+.articlesquare .secondimage{
+    display: none;
+}
+
+.wishlist{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    background: white;
+    padding: 15px;
+    color: black;
+}
+
+.badges{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}
+
+.badge{
+    color: white;
+    padding: 9px;
+}
+
+.sconto{
+    background: red;
+}
+
+.eco{
+    background: green;
+}
+
+.price{
+    color: red;
+}
+
+.articlesquare:hover .firstimage{
+    display: none;
+}
+
+.articlesquare:hover .secondimage{
+    display: inline-block;
+}
+
+.wishlist:hover{
+    color: red;
+}
